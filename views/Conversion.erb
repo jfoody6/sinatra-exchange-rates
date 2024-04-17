@@ -1,0 +1,15 @@
+<h1>Convert <%= @original_currency.upcase%></h1>
+
+<p>
+<%= @symbols %>
+</P>
+
+Go <a href="/">back</a>.
+
+<ul>
+  <% @symbols.each do |a_currency| %>
+    <li>
+      <a href="/<%= @original_currency %>/<%= a_currency %>">Convert 1 <%= @original_currency %> to <%= a_currency %></a>
+    </li>
+  <% end %>
+</ul> 
