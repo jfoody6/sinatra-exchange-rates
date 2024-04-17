@@ -1,9 +1,16 @@
+# /app.rb
+
 require "sinatra"
 require "sinatra/reloader"
+require "http"
 
+EXCHANGE_RATE_KEY = ENV["EXCHANGE_RATE_API"]
+
+# define a route
 get("/") do
-  "
-  <h1>Welcome to your Sinatra App!</h1>
-  <p>Define some routes in app.rb</p>
-  "
+
+  
+
+
+  
 end
